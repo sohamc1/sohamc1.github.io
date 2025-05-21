@@ -38,3 +38,4 @@ group :other_plugins do
 end
 
 gem "webrick", "~> 1.9"
+gem "mini_portile2", "~> 2.8.2"

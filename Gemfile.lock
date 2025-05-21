@@ -303,6 +303,7 @@ DEPENDENCIES
   jekyll-toc
   jekyll-twitter-plugin
   jemoji
+  mini_portile2 (~> 2.8.2)
   observer
   ostruct
   webrick (~> 1.9)
