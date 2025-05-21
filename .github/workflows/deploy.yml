@@ -75,7 +75,12 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.5"
-          bundler-cache: true
+          bundler-cache: false
+      - name: Configure Bundler (no parallelism)
+        run: |
+          bundle config set path vendor/bundle
+          bundle config set jobs 1
+          bundle install --retry 3
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
